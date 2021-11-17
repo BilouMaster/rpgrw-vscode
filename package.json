@@ -4,6 +4,7 @@
   	"description": "Extension for editing RPG Maker 2000/2003 texts (.txt, StringScripts) extracted with RPGRewriter to further help the translation of video games",
   	"version": "1.0.0",
   	"license": "MIT",
+	"repository": "https://github.com/biloumaster/rpgrw-vscode",
   	"icon": "images/rpgrwIcon.png",
   	"engines": {
   	  	"vscode": "^1.62.0"
