@@ -1,0 +1,46 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "RPGRewriter StringScript",
+	"patterns": [
+		{
+			"include": "#events"
+		},
+		{
+			"include": "#pages"
+		},
+		{
+			"include": "#eventcommands"
+		},
+		{
+			"include": "#textcommands"
+		},
+		{
+			"include": "#icons"
+		}
+	],
+	"repository": {
+		"events": {
+			"name": "comment.event.rpgrw",
+			"begin": "\\*{10}",
+			"end": "\\*{10}"
+		},
+		"pages": {
+			"name": "comment.page.rpgrw",
+			"begin": "-{5}",
+			"end": "-{5}"
+		},
+		"eventcommands": {
+			"name": "comment.eventcommand.rpgrw",
+			"match": "#[a-zA-Z]*#"
+		},
+		"textcommands": {
+			"name": "keyword.textcommand.rpgrw",
+			"match": "\\\\((C|S|N|V)\\[\\d+\\]|\\||\\.|\\$|!|_|>|<|\\^|\\\\)"
+		},
+		"icons": {
+			"name": "variable.icon.rpgrw",
+			"match": "\\$[a-zA-Z]"
+		}
+	},
+	"scopeName": "source.txt"
+}
